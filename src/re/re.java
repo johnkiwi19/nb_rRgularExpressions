@@ -14,11 +14,14 @@ class re {
     String string;
     String pattern;
 
-    public re() {
-        this.string = null;
-        this.pattern = null;
+
+    public re(String pattern, String string) {
+        this.string = string;
+        this.pattern = pattern;
     }
 
+    
+    
     public void setString(String string) {
         this.string = string;
     }
