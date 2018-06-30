@@ -5,6 +5,9 @@
  */
 package re;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  *
  * @author john
@@ -13,11 +16,16 @@ class re {
 
     String string;
     String pattern;
+    String output;
 
 
     public re(String pattern, String string) {
         this.string = string;
         this.pattern = pattern;
+        Pattern p = Pattern.compile(this.pattern);
+        Matcher m = p.matcher(this.string);
+        
+        this.output = m.group();
     }
 
 
