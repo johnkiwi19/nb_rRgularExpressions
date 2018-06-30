@@ -33,7 +33,7 @@ class re {
 
     @Override
     public String toString() {
-//        return "re{" + "string=" + string + ", pattern=" + pattern + '}';
+//        returno "re{" + "string=" + string + ", pattern=" + pattern + '}';
         return String.format("Pattern :%s%n"
                 + "aaa%n",
                 showPattern());
