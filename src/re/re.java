@@ -26,11 +26,16 @@ class re {
         return "This is the pattern ";
     }
 
+    String showString(){
+        return this.string;
+    }
+    
     @Override
     public String toString() {
         return String.format("Pattern :%s%n"
-                + "aaa%n",
-                showPattern());
+                + "String  : %s%n",
+                showPattern(),
+                showString());
     }
 
 }
