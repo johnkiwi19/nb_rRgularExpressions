@@ -29,6 +29,10 @@ class re {
         this.pattern = pattern;
     }
 
+    String showPattern(){
+        return "This is the pattern ";
+    }
+    
     @Override
     public String toString() {
         return "re{" + "string=" + string + ", pattern=" + pattern + '}';
