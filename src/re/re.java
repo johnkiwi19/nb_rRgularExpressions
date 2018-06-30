@@ -38,6 +38,10 @@ class re {
         return this.string;
     }
     
+    
+    String showOutput(){
+        return this.output;
+    }
     @Override
     public String toString() {
         return String.format(""
