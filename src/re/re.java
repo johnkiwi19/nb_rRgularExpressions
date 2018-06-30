@@ -23,7 +23,7 @@ class re {
 
     
     String showPattern() {
-        return this.string;
+        return this.pattern;
     }
 
     String showString(){
@@ -32,7 +32,8 @@ class re {
     
     @Override
     public String toString() {
-        return String.format("Pattern :%s%n"
+        return String.format(""
+                + "Pattern : %s%n"
                 + "String  : %s%n",
                 showPattern(),
                 showString());
