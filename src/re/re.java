@@ -28,7 +28,6 @@ class re {
 
     @Override
     public String toString() {
-//        returno "re{" + "string=" + string + ", pattern=" + pattern + '}';
         return String.format("Pattern :%s%n"
                 + "aaa%n",
                 showPattern());
