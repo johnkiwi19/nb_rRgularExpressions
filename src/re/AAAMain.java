@@ -3,6 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+/*
+This will cretate a example to test out regular expressions 
+ A string will be added and the regula expression will be applied
+*/
+
+
 package re;
 
 /**
