@@ -14,42 +14,51 @@ import java.util.regex.Pattern;
  */
 class re {
 
-    String string;
-    String pattern;
+    String matcher_string;
+    String pattern_string;
     String output;
 
+    Pattern pattern;
+    Matcher matcher;
 
     public re(String pattern, String string) {
-        this.string = string;
-        this.pattern = pattern;
-        Pattern p = Pattern.compile(this.pattern);
-        Matcher m = p.matcher(this.string);
-        
-        this.output = m.group();
+        this.matcher_string = string;
+        this.pattern_string = pattern;
+        this.pattern = Pattern.compile(this.pattern_string);
+        this.matcher = this.pattern.matcher(this.matcher_string);
+
+//        this.output = m.group(0);
     }
 
-
-    
     String showPattern() {
-        return this.pattern;
+        return this.pattern_string;
     }
 
-    String showString(){
-        return this.string;
+    String showString() {
+        return this.matcher_string;
     }
-    
-    
-    String showOutput(){
-        return this.output;
+
+    String showOutput() {
+        int count = 0;
+        StringBuilder sb = new StringBuilder();
+        while (matcher.find()) {
+            count++;
+            sb.append(String.format("Found :%2d at %3d - %3d  (%s)%n",
+                    count,
+                    matcher.start(),
+                    matcher.end(),
+                    matcher.group()));
+        }
+
+        return sb.toString();
     }
-    
+
     @Override
     public String toString() {
         return String.format(""
                 + "Pattern : %s%n"
                 + "String  : %s%n"
-                + "Output  : %s%n",
-                
+                + "Output  %n%s%n",
                 showPattern(),
                 showString(),
                 showOutput());

@@ -22,7 +22,7 @@ public class AAAMain {
      */
     public static void main(String[] args) {
         
-        re r = new re("*","Ok so this will be the string that is matched");
+        re r = new re("\\b..\\b","Ok so this will be the string that is matched");
         System.out.println(r);
         
     }
