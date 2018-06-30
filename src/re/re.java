@@ -20,16 +20,8 @@ class re {
         this.pattern = pattern;
     }
 
-    
-    
-    public void setString(String string) {
-        this.string = string;
-    }
 
-    public void setPattern(String pattern) {
-        this.pattern = pattern;
-    }
-
+    
     String showPattern() {
         return "This is the pattern ";
     }
