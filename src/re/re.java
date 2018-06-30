@@ -19,8 +19,6 @@ class re {
         this.pattern = null;
     }
 
-    
-    
     public void setString(String string) {
         this.string = string;
     }
@@ -29,17 +27,16 @@ class re {
         this.pattern = pattern;
     }
 
-    String showPattern(){
+    String showPattern() {
         return "This is the pattern ";
     }
-    
+
     @Override
     public String toString() {
-        return "re{" + "string=" + string + ", pattern=" + pattern + '}';
+//        return "re{" + "string=" + string + ", pattern=" + pattern + '}';
+        return String.format("Pattern :%s%n"
+                + "aaa%n",
+                showPattern());
     }
-    
-    
-    
-    
-    
+
 }
