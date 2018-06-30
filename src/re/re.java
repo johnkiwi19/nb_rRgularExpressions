@@ -42,13 +42,17 @@ class re {
     String showOutput(){
         return this.output;
     }
+    
     @Override
     public String toString() {
         return String.format(""
                 + "Pattern : %s%n"
-                + "String  : %s%n",
+                + "String  : %s%n"
+                + "Output  : %s%n",
+                
                 showPattern(),
-                showString());
+                showString(),
+                showOutput());
     }
 
 }
