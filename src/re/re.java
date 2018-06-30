@@ -23,7 +23,7 @@ class re {
 
     
     String showPattern() {
-        return "This is the pattern ";
+        return this.string;
     }
 
     String showString(){
